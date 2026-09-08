@@ -1,11 +1,15 @@
 # 📖 Educations
-- **Ph.D. in Biochemistry and Molecular Biology**, Monash University, Australia · **2021/07–2025/05**. Advisors: Prof. Jiangning Song, Prof. Jian Li and Dr. Chen Li.
-- **M.S. in Computer Science and Technology**, Nankai University, China · **2017/09–2020/06**. Advisor: Prof. Han Zhang.
-- **B.S. in Automation**, Nankai University, China · **2013/08–2017/06**. Advisor: Prof. Han Zhang.
+- **Ph.D. in Biochemistry and Molecular Biology**, Monash University, Australia · **2021/07–2025/05**.  
+  *Advisors: Prof. Jiangning Song, Prof. Jian Li and Dr. Chen Li.*
+- **M.S. in Computer Science and Technology**, Nankai University, China · **2017/09–2020/06**.  
+  *Advisor: Prof. Han Zhang.*
+- **B.S. in Automation**, Nankai University, China · **2013/08–2017/06**.  
+  *Advisor: Prof. Han Zhang.*
 
 <span class="anchor" id="presentations"></span>
 # 💬 Conference Presentations
-- **2026:** Oral presentation, Adelaide Protein Group (APG) Annual Research Symposium.
+- **2026:** Oral presentation, Adelaide Protein Group (APG) Annual Research Symposium.  
+  *“AI-driven peptide design and antimicrobials discovery”*
 - **2025:** Poster presentation, Lorne Proteins Conference.
 
 <span class="anchor" id="experience"></span>
