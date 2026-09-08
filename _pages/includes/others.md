@@ -1,5 +1,6 @@
 # 📖 Educations
 - **Ph.D. in Biochemistry and Molecular Biology**, Monash University, Australia · **2021/07–2025/05**.  
+  *Qualified on 2025/05/06 and graduated on 2025/05/14 as Doctor of Philosophy.*
   *Advisors: Prof. Jiangning Song, Prof. Jian Li and Dr. Chen Li.*
 - **M.S. in Computer Science and Technology**, Nankai University, China · **2017/09–2020/06**.  
   *Advisor: Prof. Han Zhang.*
@@ -14,7 +15,7 @@
 
 <span class="anchor" id="experience"></span>
 # 💻 Experience
-- **Postdoctoral Researcher**, South Australian immunoGENomics Cancer Institute (SAiGENCI), Adelaide University · **2025/04–Present**.
+- **Postdoctoral Researcher**, South Australian immunoGENomics Cancer Institute (SAiGENCI), Adelaide University · **2025/04/23–Present**.
 - **Research Assistant**, Biomedicine Discovery Institute (BDI), Monash University · **2025/02–2025/04**.
 
 # 🌱 Student Supervision
