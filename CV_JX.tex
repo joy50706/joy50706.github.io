@@ -1,0 +1,279 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+
+\definecolor{headerblue}{RGB}{0,51,102}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=headerblue,
+  urlcolor=headerblue,
+  citecolor=headerblue
+}
+
+% Compact section formatting (Black titles)
+\titleformat{\section}{\large\bfseries\color{black}\scshape}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{3pt}
+
+\titleformat{\subsection}{\normalfont\bfseries\color{black}}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{5pt}{2pt}
+
+% Global compact list settings
+\setlist{nosep, leftmargin=*, itemsep=2pt, topsep=2pt, parsep=0pt, partopsep=0pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\newcommand{\cventry}[4]{%
+  \par\addvspace{2pt}%
+  \textbf{#1} \hfill #2 \\
+  \textit{#3}\ifx&#4&\else \hfill \textit{#4}\fi \par\vspace{2pt}%
+}
+
+\newcommand{\equalcontrib}{%
+  \textsuperscript{\ensuremath{\dagger}}%
+}
+
+\begin{document}
+
+% Compact Header
+\begin{center}
+  {\Large\bfseries Dr.~Jing Xu} \\[2pt]
+  {\small\textbf{Postdoctoral Researcher} $\cdot$ SAiGENCI, Adelaide University, Level 9, AHMS Building, Adelaide SA 5005} \\[2pt]
+  {\small
+  \href{mailto:j.xu@adelaide.edu.au}{j.xu@adelaide.edu.au} \quad$\vert$\quad
+  (+61) 432539268 \quad$\vert$\quad
+  \href{https://researchers.adelaide.edu.au/profile/j.xu}{Profile Page}
+  }
+\end{center}
+\vspace{-4pt}
+
+\section{Research Interests}
+Bioactive Peptide Discovery, Human Microbiome, Multi-Omics Data Analysis, Bioinformatics, Computational Biology, Deep Learning.
+
+\section{Research Summary}
+Jing Xu's research lies at the intersection of artificial intelligence, bioinformatics, and computational biology, with a focus on developing machine-learning approaches for biomolecular modelling and therapeutic discovery. Her work integrates deep learning, multimodal learning, and generative AI to analyse and design peptides, proteins, molecular structures, and biological interactions. A major emphasis of her research is the AI-driven discovery and optimisation of antimicrobial peptides, including the modelling of peptide activity, structure, function, and terminal chemical modifications. She also applies computational methods to problems in selective autophagy, immunology, and precision medicine. By connecting methodological development with experimental validation and clinical applications, her research aims to accelerate the translation of computational discoveries into next-generation antimicrobial and therapeutic candidates.
+
+\section{Education}
+\cventry{Ph.D.\ in Biochemistry and Molecular Biology}{2021/7--2025/5}{Monash University, Clayton, Australia}{}
+\vspace{-2pt}{\small\textit{Advisors:} Prof.~Jiangning Song, Prof.~Jian Li, Dr.~Chen Li}\par
+
+\cventry{M.S.\ in Computer Science and Technology}{2017/9--2020/6}{Nankai University, Tianjin, China}{}
+\vspace{-2pt}{\small\textit{Advisor:} Prof.~Han Zhang}\par
+
+\cventry{B.S.\ in Automation}{2013/8--2017/6}{Nankai University, Tianjin, China}{}
+\vspace{-2pt}{\small\textit{Advisor:} Prof.~Han Zhang}\par
+
+\section{Working Experiences}
+\cventry{Postdoctoral Researcher}{2025/4--Present}{South Australian immunoGENomics Cancer Institute (SAiGENCI), Adelaide University}{}
+\cventry{Research Assistant}{2025/2--2025/4}{Biomedicine Discovery Institute (BDI), Monash University}{}
+
+\section{Publications}
+
+\subsection*{First-Author Publications}
+\begin{enumerate}[label={[\arabic*]}]
+
+\item
+\textbf{J.~Xu}, M.~D.~T.~Torres, C.~Li, J.~Li, F.~Li, J.~Song, and C.~de la Fuente-Nunez. ``Modification-Aware AI Enables Terminal Chemical Modifications for Peptide Design and Discovers Potent Antimicrobials.'' \textit{bioRxiv}, 2026.04.09.717597, 2026. Preprint; under revision in \textit{Nature Communications}. doi: \href{https://doi.org/10.64898/2026.04.09.717597}{10.64898/2026.04.09.717597}.
+
+
+\item
+\textbf{J.~Xu}, Y.~Hao, and F.~Li.
+``Decoding Functional LIR-Mediated Interfaces in Selective Autophagy through Computational Discovery.''
+Under review in \textit{Medicinal Research Reviews}.
+
+\item
+\textbf{J.\ Xu}, F.\ Li, J.\ Song, and C.\ de la Fuente-Nunez.
+``AI-Driven Design to Clinical Translation of Next-Generation Antimicrobial Peptides.''
+Under review in \textit{BMC Medicine}.
+
+
+\item
+\textbf{J.~Xu}, C.~Li, X.~Wang, A.~Y.~Peleg, F.~Li, J.~Song, and C.~de la Fuente-Nunez.
+``Artificial Intelligence in Antibiotic Discovery: Applications, Challenges, and Future Outlook.''
+\textit{Cell Biomaterials}, pp.~1--32, 2026.
+doi: \href{https://doi.org/10.1016/j.celbio.2026.100445}{10.1016/j.celbio.2026.100445}.
+
+\item
+\textbf{J.~Xu}, J.~Ou, C.~Li, Z.~Zhu, J.~Li, H.~Zhang, J.~Chen, B.~Yi, W.~Zhu, W.~Zhang, G.~Zhang, Q.~Gao, Y.~Kuang, J.~Song, X.~Chen, and H.~Liu.
+``Multi-Modality Data-Driven Analysis of Diagnosis and Treatment of Psoriatic Arthritis.''
+\textit{npj Digital Medicine}, vol.~6, Art.~no.~13, 2023.
+doi: \href{https://doi.org/10.1038/s41746-023-00757-3}{10.1038/s41746-023-00757-3}.
+
+\item
+\textbf{J.~Xu}, F.~Li, C.~Li, X.~Guo, C.~Landersdorfer, H.-H.~Shen, A.~Y.~Peleg, J.~Li, S.~Imoto, J.~Yao, T.~Akutsu, and J.~Song.
+``iAMPCN: A Deep-Learning Approach for Identifying Antimicrobial Peptides and Their Functional Activities.''
+\textit{Briefings in Bioinformatics}, vol.~24, no.~4, Art.~no.~bbad240, 2023.
+doi: \href{https://doi.org/10.1093/bib/bbad240}{10.1093/bib/bbad240}.
+
+\item
+\textbf{J.~Xu}, F.~Li, A.~Leier, D.~Xiang, H.-H.~Shen, T.~T.~Marquez Lago, J.~Li, D.-J.~Yu, and J.~Song.
+``Comprehensive Assessment of Machine Learning-Based Methods for Predicting Antimicrobial Peptides.''
+\textit{Briefings in Bioinformatics}, vol.~22, no.~5, Art.~no.~bbab083, 2021.
+doi: \href{https://doi.org/10.1093/bib/bbab083}{10.1093/bib/bbab083}.
+
+\item
+\textbf{J.~Xu}, H.~Zhang, J.~Zheng, P.~Dovoedo, and Y.~Yin.
+``eCAMI: Simultaneous Classification and Motif Identification for Enzyme Annotation.''
+\textit{Bioinformatics}, vol.~36, no.~7, pp.~2068--2075, 2020.
+doi: \href{https://doi.org/10.1093/bioinformatics/btz908}{10.1093/bioinformatics/btz908}.
+
+\end{enumerate}
+
+\subsection*{Co-First-Author Publications}
+\begin{enumerate}[label={[\arabic*]}]
+
+\item
+Z.~Sun\equalcontrib, \textbf{J.~Xu}\equalcontrib, Y.~Zhang, Y.~Zhang, Z.~Wang, X.~Wang, S.~Li, Y.~Guo, H.-H.~Shen, et~al.
+``Multimodal Geometric Learning for Antimicrobial Peptide Identification by Leveraging AlphaFold2-Predicted Structures and Surface Features.''
+\textit{Briefings in Bioinformatics}, vol.~26, no.~3, Art.~no.~bbaf261, 2025.
+doi: \href{https://doi.org/10.1093/bib/bbaf261}{10.1093/bib/bbaf261}.
+
+\item
+X.~Su\equalcontrib, \textbf{J.~Xu}\equalcontrib, Y.~Yin, X.~Quan, and H.~Zhang.
+``Antimicrobial Peptide Identification Using Multi-Scale Convolutional Network.''
+\textit{BMC Bioinformatics}, vol.~20, no.~1, Art.~no.~730, 2019.
+doi: \href{https://doi.org/10.1186/s12859-019-3327-y}{10.1186/s12859-019-3327-y}.
+
+\end{enumerate}
+\vspace{1pt}
+{\small\equalcontrib\,Co-first author.}
+
+\subsection*{Co-Authored Publications}
+\begin{enumerate}[label={[\arabic*]}]
+
+\item
+R.~Han, Y.~Zhang, X.~Liu, L.~Fu, T.~Pan, \textbf{J.~Xu}, X.~Wang, P.~Zhang, X.~Chen, J.~Lei, W.~Lan, C.~Ji, S.~Cui, S.~Wu, J.~Song, T.~Chen, and G.~Wang.
+``Generalizable Mutation-Effect Prediction across Adaptive Immune Recognition via a Unified Multimodal Framework.''
+\textit{Nature Machine Intelligence}, vol.~8, pp.~913--929, 2026.
+doi: \href{https://doi.org/10.1038/s42256-026-01243-7}{10.1038/s42256-026-01243-7}.
+
+\item
+R.~Han, X.~Liu, T.~Pan, \textbf{J.~Xu}, X.~Wang, W.~Lan, Z.~Li, Z.~Wang, J.~Song, G.~Wang, and T.~Chen.
+``CoPRA: Bridging Cross-Domain Pretrained Sequence Models with Complex Structures for Protein--RNA Binding Affinity Prediction.''
+\textit{Proceedings of the AAAI Conference on Artificial Intelligence}, vol.~39, no.~1, pp.~246--254, 2025.
+
+\item
+Q.~Qu, \textbf{J.~Xu}, W.~Kang, R.~Feng, and X.~Hu.
+``Ensemble Learning Model Identifies Adaptation Classification and Turning Points of River Microbial Communities in Response to Heatwaves.''
+\textit{Global Change Biology}, vol.~29, no.~24, pp.~6988--7000, 2023.
+doi: \href{https://doi.org/10.1111/gcb.16985}{10.1111/gcb.16985}.
+
+\item
+X.~Wang, F.~Li, \textbf{J.~Xu}, J.~Rong, G.~I.~Webb, Z.~Ge, J.~Li, and J.~Song.
+``ASPIRER: A New Computational Approach for Identifying Non-Classical Secreted Proteins Based on Deep Learning.''
+\textit{Briefings in Bioinformatics}, vol.~23, no.~2, Art.~no.~bbac031, 2022.
+doi: \href{https://doi.org/10.1093/bib/bbac031}{10.1093/bib/bbac031}.
+
+\item
+F.~Li, S.~Dong, A.~Leier, M.~Han, X.~Guo, \textbf{J.~Xu}, X.~Wang, S.~Pan, C.~Jia, Y.~Zhang, et~al.
+``Positive-Unlabeled Learning in Bioinformatics and Computational Biology: A Brief Review.''
+\textit{Briefings in Bioinformatics}, vol.~23, no.~1, Art.~no.~bbab461, 2022.
+doi: \href{https://doi.org/10.1093/bib/bbab461}{10.1093/bib/bbab461}.
+
+\item
+R.~Feng, F.~Yu, \textbf{J.~Xu}, and X.~Hu.
+``Knowledge Gaps in Immune Response and Immunotherapy Involving Nanomaterials: Databases and Artificial Intelligence for Material Design.''
+\textit{Biomaterials}, vol.~266, Art.~no.~120469, 2021.
+doi: \href{https://doi.org/10.1016/j.biomaterials.2020.120469}{10.1016/j.biomaterials.2020.120469}.
+
+\item
+X.~Jiang, W.~Wang, \textbf{J.~Xu}, Z.~Wang, and G.~N.~Lin.
+``K-Means Based Unsupervised Feature Selection to Prioritize Biomarkers of Different Disease Clinical Phases.''
+\textit{bioRxiv}, 2020.04.21.052704, 2020.
+doi: \href{https://doi.org/10.1101/2020.04.21.052704}{10.1101/2020.04.21.052704}. \textit{Preprint}.
+
+\item
+T.~Peng, C.~Wei, F.~Yu, \textbf{J.~Xu}, Q.~Zhou, T.~Shi, and X.~Hu.
+``Predicting Nanotoxicity by an Integrated Machine Learning and Metabolomics Approach.''
+\textit{Environmental Pollution}, vol.~267, Art.~no.~115434, 2020.
+doi: \href{https://doi.org/10.1016/j.envpol.2020.115434}{10.1016/j.envpol.2020.115434}.
+
+\item
+W.~Li, Q.~Zhao, H.~Zhang, X.~Quan, \textbf{J.~Xu}, and Y.~Yin.
+``Bayesian Multi-Scale Convolutional Neural Network for Motif Occupancy Identification.''
+In \textit{Proc. IEEE BIBM}, pp.~293--298, 2020.
+doi: \href{https://doi.org/10.1109/BIBM49941.2020.9313556}{10.1109/BIBM49941.2020.9313556}.
+
+\item
+X.~Guo, X.~Jiang, \textbf{J.~Xu}, X.~Quan, M.~Wu, and H.~Zhang.
+``Ensemble Consensus-Guided Unsupervised Feature Selection to Identify Huntington's Disease-Associated Genes.''
+\textit{Genes}, vol.~9, no.~7, Art.~no.~350, 2018.
+doi: \href{https://doi.org/10.3390/genes9070350}{10.3390/genes9070350}.
+
+\end{enumerate}
+
+\section{Manuscripts in Preparation}
+\begin{enumerate}[label={[\arabic*]}]
+
+\item
+\textbf{J.~Xu}, S.~Kaur, M.~Guilhaus, L.~Nguyen, F.~Li, and C.~Sweeney.
+``Clinical and Molecular Features Associated with Planned Early Docetaxel Use in Metastatic Hormone-Sensitive Prostate Cancer: A Machine-Learning Analysis of the ENZAMET Trial.''
+\textit{Manuscript in preparation}.
+
+
+\end{enumerate}
+
+\section{Grants and Funding}
+\textit{N/A}
+
+\section{Research Supervision}
+\textbf{Ph.D.\ Students:} Zehua Sun (2025/8--Present; Antimicrobial Peptides Discovery) \\
+\textbf{Master Students:} Ishan Gadekar (2025/08--2026/05; Antimicrobial Peptide Prediction), Grant Freeman (2025/4--2025/9)
+
+\section{Professional Service}
+\begin{itemize}
+  \item Reviewer: \textit{Genome Biology}, \textit{Briefings in Bioinformatics}, \textit{BMC Bioinformatics}, \textit{Scientific Reports}, \textit{IEEE BIBM}
+\end{itemize}
+
+\section{Awards and Honors}
+
+\subsection*{Awards}
+\begin{itemize}
+  \item Outstanding Undergraduate Thesis Award, Nankai University, 2017.
+\end{itemize}
+
+\subsection*{Scholarships}
+\begin{itemize}
+  \item Monash Graduate Scholarship (MGS), Monash University, 2021--2025.
+  \item Gongneng Scholarship, Nankai University, 2016.
+  \item Gongneng Scholarship, Nankai University, 2015.
+  \item Second-Class Comprehensive Scholarship, Nankai University, 2014.
+\end{itemize}
+
+\section{Conference Presentations}
+\begin{itemize}
+  \item Oral Presentation, Adelaide Protein Group (APG) Annual Research Symposium, 2026.
+  \item Poster Presentation, Lorne Proteins Conference, 2025.
+\end{itemize}
+
+\section{Technical Skills}
+\begin{itemize}
+  \item \textbf{Bioinformatics and Omics Analysis:}
+  RNA-seq, scRNA-seq, proteomics, whole-exome sequencing (WES),
+  genome sequencing, genome assembly, and biological sequence analysis.
+
+  \item \textbf{Artificial Intelligence and Data Science:}
+  Machine learning, deep learning, multimodal learning,
+  predictive modelling, and generative modelling.
+
+  \item \textbf{Programming Languages:}
+  Python, R, MATLAB, Java, C, C\#, and C++.
+
+  \item \textbf{Languages:}
+  Mandarin Chinese (native) and English (fluent).
+\end{itemize}
+
+\end{document}
