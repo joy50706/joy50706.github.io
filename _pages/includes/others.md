@@ -1,7 +1,7 @@
 # 📖 Educations
-- **Ph.D. in Biochemistry and Molecular Biology**, Monash University, Australia · July 2021–May 2025. Advisors: Prof. Jiangning Song, Prof. Jian Li and Dr. Chen Li.
-- **M.S. in Computer Science and Technology**, Nankai University, China · September 2017–June 2020. Advisor: Prof. Han Zhang.
-- **B.S. in Automation**, Nankai University, China · August 2013–June 2017. Advisor: Prof. Han Zhang.
+- **Ph.D. in Biochemistry and Molecular Biology**, Monash University, Australia · 2021/07–2025/05. Advisors: Prof. Jiangning Song, Prof. Jian Li and Dr. Chen Li.
+- **M.S. in Computer Science and Technology**, Nankai University, China · 2017/09–2020/06. Advisor: Prof. Han Zhang.
+- **B.S. in Automation**, Nankai University, China · 2013/08–2017/06. Advisor: Prof. Han Zhang.
 
 <span class="anchor" id="presentations"></span>
 # 💬 Conference Presentations
@@ -10,11 +10,11 @@
 
 <span class="anchor" id="experience"></span>
 # 💻 Experience
-- **Postdoctoral Researcher**, South Australian immunoGENomics Cancer Institute (SAiGENCI), Adelaide University · April 2025–Present.
-- **Research Assistant**, Biomedicine Discovery Institute (BDI), Monash University · February–April 2025.
+- **Postdoctoral Researcher**, South Australian immunoGENomics Cancer Institute (SAiGENCI), Adelaide University · 2025/04–至今.
+- **Research Assistant**, Biomedicine Discovery Institute (BDI), Monash University · 2025/02–2025/04.
 
 # 🌱 Student Supervision
-- **Zehua Sun**, Ph.D. student · 2025/08–Present. Research: antimicrobial peptide discovery.
+- **Zehua Sun**, Ph.D. student · 2025/08–至今. Research: antimicrobial peptide discovery.
 - **Ishan Gadekar**, Master's student · 2025/08–2026/05. Research: antimicrobial peptide prediction.
 - **Grant Freeman**, Master's student · 2025/04–2025/09.
 
