@@ -19,7 +19,7 @@
 - **Grant Freeman**, Master's student · 2025/04–2025/09.
 
 # 🤝 Professional Service
-**Reviewer:** Genome Biology · BMC Bioinformatics · Scientific Reports · IEEE BIBM.
+**Reviewer:** Genome Biology · Briefings in Bioinformatics · BMC Bioinformatics · Scientific Reports · IEEE BIBM.
 
 # 🛠 Research Skills
 - **Bioinformatics & multi-omics:** RNA-seq, single-cell RNA-seq, proteomics, whole-exome sequencing, genome sequencing and assembly, and biological sequence analysis.
