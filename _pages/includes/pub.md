@@ -100,6 +100,6 @@
 ## Work in Preparation
 
 - **Clinical and Molecular Features Associated with Planned Early Docetaxel Use in Metastatic Hormone-Sensitive Prostate Cancer: A Machine-Learning Analysis of the ENZAMET Trial**  
-  <strong><u>J. Xu</u></strong>, S. Kaur, M. Guilhaus, F. Li and C. Sweeney.  
+  <strong><u>J. Xu</u></strong>, S. Kaur, M. Guilhaus, L. Nguyen, F. Li and C. Sweeney.  
   *Manuscript in preparation*.
 
