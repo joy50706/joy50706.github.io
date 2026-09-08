@@ -15,7 +15,7 @@
 
 # 🌱 Student Supervision
 - **Zehua Sun**, Ph.D. student · August 2025–Present. Research: antimicrobial peptide discovery.
-- **Ishan Gadekar**, Master's student.
+- **Ishan Gadekar**, Master's student · 2025/08–2026/05.
 - **Grant Freeman**, Master's student · April–September 2025.
 
 # 🤝 Professional Service
