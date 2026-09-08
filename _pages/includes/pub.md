@@ -77,7 +77,7 @@
 
 ## Preprints
 
-- **[Modification-Aware AI Enables Terminal Chemical Modifications for Peptide Design and Discovers Potent Antimicrobials](https://doi.org/10.1101/2026.04.09.717597)**  
+- **[Modification-Aware AI Enables Terminal Chemical Modifications for Peptide Design and Discovers Potent Antimicrobials](https://doi.org/10.64898/2026.04.09.717597)**  
   **J. Xu**, M. D. T. Torres, C. Li, J. Li, F. Li, J. Song and C. de la Fuente-Nunez.  
   *bioRxiv, 2026. Preprint; under revision*.
 
