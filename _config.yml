@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "XXX"
-description              : "XXX"
+title                    : "Jing Xu"
+description              : "AI for bioactive peptide discovery, bioinformatics and computational biology."
 repository               : "joy50706/joy50706.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -21,16 +21,16 @@ baidu_site_verification  :
 
 # Site Author
 author:
-  name             : "XXX"
+  name             : "Jing Xu"
   avatar           : "images/xxx-avatar.svg"
-  bio              : ""
-  location         : "XXX"
-  employer         : "XXX"
+  bio              : "Postdoctoral Researcher"
+  location         : "Adelaide, Australia"
+  employer         : "SAiGENCI, Adelaide University"
   pubmed           : 
   googlescholar    : 
-  email            : 
+  email            : "j.xu@adelaide.edu.au"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
+  uri              : "https://researchers.adelaide.edu.au/profile/j.xu"
   bitbucket        :
   codepen          :
   dribbble         :
