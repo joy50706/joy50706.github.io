@@ -1,8 +1,11 @@
 name: Update github myprofile
 
-on: 'page_build'
+on:
+ workflow_dispatch:
+
 jobs:
   build:
+    if: ${{ false }} # Enable only after configuring your own accounts.
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
