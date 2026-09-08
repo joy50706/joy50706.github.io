@@ -5,5 +5,3 @@ My research lies at the intersection of **artificial intelligence, bioinformatic
 I am particularly interested in the discovery and optimisation of **antimicrobial peptides**, including their activity, structure–function relationships and terminal chemical modifications. My work also spans selective autophagy, immunology and precision medicine, connecting computational methods with experimental validation and clinical applications.
 
 **Research interests:** Bioactive Peptide Discovery · Human Microbiome · Multi-Omics Data Analysis · Bioinformatics · Computational Biology · Deep Learning.
-
-[University profile](https://researchers.adelaide.edu.au/profile/j.xu) · [Email](mailto:j.xu@adelaide.edu.au) · [GitHub](https://github.com/joy50706)
