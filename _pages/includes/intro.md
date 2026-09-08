@@ -1,5 +1,9 @@
-I am **XXX**, a XXX at **XXX**. My research focuses on XXX. For academic cooperation, please contact me at **XXX**.
+I am **Dr. Jing Xu**, a Postdoctoral Researcher at the **South Australian immunoGENomics Cancer Institute (SAiGENCI), Adelaide University**. I received my Ph.D. in Biochemistry and Molecular Biology from Monash University, supervised by Prof. Jiangning Song, Prof. Jian Li and Dr. Chen Li.
 
-I received my XXX degree from XXX, advised by XXX. I also collaborate with XXX on XXX.
+My research lies at the intersection of **artificial intelligence, bioinformatics and computational biology**. I develop machine learning methods for biomolecular modelling and therapeutic discovery, integrating deep learning, multimodal learning and generative AI to study peptides, proteins and their biological interactions.
 
-My research interests include XXX, XXX and XXX.
+I am particularly interested in the discovery and optimisation of **antimicrobial peptides**, including their activity, structure–function relationships and terminal chemical modifications. My work also spans selective autophagy, immunology and precision medicine, connecting computational methods with experimental validation and clinical applications.
+
+**Research interests:** Bioactive Peptide Discovery · Human Microbiome · Multi-Omics Data Analysis · Bioinformatics · Computational Biology · Deep Learning.
+
+[University profile](https://researchers.adelaide.edu.au/profile/j.xu) · [Email](mailto:j.xu@adelaide.edu.au) · [GitHub](https://github.com/joy50706)
