@@ -1,0 +1,55 @@
+name: Build website and LaTeX CV
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends latexmk texlive-latex-extra texlive-fonts-recommended lmodern
+      - name: Compile CV
+        run: |
+          mkdir -p "$RUNNER_TEMP/cv"
+          latexmk -pdf -interaction=nonstopmode -halt-on-error -file-line-error -outdir="$RUNNER_TEMP/cv" CV_JX.tex
+          cp "$RUNNER_TEMP/cv/CV_JX.pdf" CV_JX.pdf
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Build Jekyll website
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Verify published PDF
+        run: cmp CV_JX.pdf _site/CV_JX.pdf
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy website
+        id: deployment
+        uses: actions/deploy-pages@v4
