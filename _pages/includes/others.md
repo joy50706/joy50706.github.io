@@ -14,9 +14,9 @@
 - **Research Assistant**, Biomedicine Discovery Institute (BDI), Monash University · February–April 2025.
 
 # 🌱 Student Supervision
-- **Zehua Sun**, Ph.D. student · August 2025–Present. Research: antimicrobial peptide discovery.
+- **Zehua Sun**, Ph.D. student · 2025/08–Present. Research: antimicrobial peptide discovery.
 - **Ishan Gadekar**, Master's student · 2025/08–2026/05.
-- **Grant Freeman**, Master's student · April–September 2025.
+- **Grant Freeman**, Master's student · 2025/04–2025/09.
 
 # 🤝 Professional Service
 **Reviewer:** Genome Biology · BMC Bioinformatics · Scientific Reports · IEEE BIBM.
