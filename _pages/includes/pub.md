@@ -12,7 +12,7 @@
 
 ## Co-First-Author Publications
 
-- ``Briefings in Bioinformatics, 26(3), bbaf261`` **[Multimodal Geometric Learning for Antimicrobial Peptide Identification by Leveraging AlphaFold2-Predicted Structures and Surface Features](https://doi.org/10.1093/bib/bbaf261)**. *<strong><u>Z. Sun</u></strong>†, <strong><u>J. Xu</u>†</strong>, Y. Zhang, Y. Zhang, Z. Wang, X. Wang, S. Li, Y. Guo, H.-H. Shen et al..*
+- ``Briefings in Bioinformatics, 26(3), bbaf261`` **[Multimodal Geometric Learning for Antimicrobial Peptide Identification by Leveraging AlphaFold2-Predicted Structures and Surface Features](https://doi.org/10.1093/bib/bbaf261)**. *Z. Sun†, <strong><u>J. Xu</u>†</strong>, Y. Zhang, Y. Zhang, Z. Wang, X. Wang, S. Li, Y. Guo, H.-H. Shen et al..*
 - ``BMC Bioinformatics, 20, 730`` **[Antimicrobial Peptide Identification Using Multi-Scale Convolutional Network](https://doi.org/10.1186/s12859-019-3327-y)**. *X. Su†, <strong><u>J. Xu</u>†</strong>, Y. Yin, X. Quan and H. Zhang.*
 
 ## Coauthored Publications
