@@ -53,7 +53,12 @@ document.addEventListener("DOMContentLoaded", function () {
           badge.innerHTML =
             '<span class="citation-badge__label"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Citations</span>' +
             '<span class="citation-badge__count">' + work.cited_by_count + "</span>";
-          link.parentElement.insertAdjacentElement("afterend", badge);
+          var authorBlock = link.parentElement.parentElement.querySelector(".pub-authors");
+          if (authorBlock) {
+            authorBlock.insertAdjacentElement("beforebegin", badge);
+          } else {
+            link.parentElement.insertAdjacentElement("afterend", badge);
+          }
         });
       });
     })
