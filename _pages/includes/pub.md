@@ -31,3 +31,12 @@
 
 - ``bioRxiv, 2026 (Preprint; under revision)`` **[Modification-Aware AI Enables Terminal Chemical Modifications for Peptide Design and Discovers Potent Antimicrobials](https://doi.org/10.64898/2026.04.09.717597)**. *<strong><u>J. Xu</u></strong>, M. D. T. Torres, C. Li, J. Li, F. Li, J. Song and C. de la Fuente-Nunez*.
 - ``bioRxiv, 2020`` **[K-Means Based Unsupervised Feature Selection to Prioritize Biomarkers of Different Disease Clinical Phases](https://doi.org/10.1101/2020.04.21.052704)**. *X. Jiang, W. Wang, <strong><u>J. Xu</u></strong>, Z. Wang and G. N. Lin*.
+
+## Manuscripts Under Review
+
+- ``Under review`` **Decoding Functional LIR-Mediated Interfaces in Selective Autophagy through Computational Discovery**. *<strong><u>J. Xu</u></strong>, Y. Hao and F. Li*.
+- ``Under review`` **AI-Driven Design to Clinical Translation of Next-Generation Antimicrobial Peptides**. *<strong><u>J. Xu</u></strong>, F. Li, J. Song and C. de la Fuente-Nunez*.
+
+## Manuscript in Preparation
+
+- ``Manuscript in preparation`` **Clinical and Molecular Features Associated with Planned Early Docetaxel Use in Metastatic Hormone-Sensitive Prostate Cancer: A Machine-Learning Analysis of the ENZAMET Trial**. *<strong><u>J. Xu</u></strong>, S. Kaur, M. Guilhaus, L. Nguyen, F. Li and C. Sweeney*.
