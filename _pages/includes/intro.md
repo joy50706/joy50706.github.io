@@ -3,3 +3,15 @@ I am **Dr. Jing Xu**, a Postdoctoral Researcher at the **South Australian immuno
 My research lies at the intersection of **artificial intelligence, bioinformatics and computational biology**. I develop machine learning methods for biomolecular modelling and therapeutic discovery, integrating deep learning, multimodal learning and generative AI to study peptides, proteins and their biological interactions. I am particularly interested in the discovery and optimisation of **antimicrobial peptides**, including their activity, structure–function relationships and terminal chemical modifications. My work also spans selective autophagy, immunology and precision medicine, connecting computational methods with experimental validation and clinical applications.
 
 **Research interests:** Bioactive Peptide Discovery · Human Microbiome · Multi-Omics Data Analysis · Bioinformatics · Computational Biology · Deep Learning.
+
+<div class="academic-metrics" id="academic-metrics" title="Calculated from the publications listed on this page; data from OpenAlex">
+  <span class="academic-metric">
+    <span class="academic-metric__label"><i class="fas fa-quote-right" aria-hidden="true"></i> Total Citations</span>
+    <span class="academic-metric__value" id="total-citations">—</span>
+  </span>
+  <span class="academic-metric">
+    <span class="academic-metric__label"><i class="fas fa-chart-line" aria-hidden="true"></i> H-index</span>
+    <span class="academic-metric__value" id="h-index">—</span>
+  </span>
+  <span class="academic-metrics__source">OpenAlex</span>
+</div>

@@ -43,8 +43,11 @@ document.addEventListener("DOMContentLoaded", function () {
       return response.json();
     })
     .then(function (data) {
+      var citationCounts = [];
+
       data.results.forEach(function (work) {
         if (!work.doi) return;
+        citationCounts.push(work.cited_by_count || 0);
         var doi = work.doi.replace(/^https:\/\/doi\.org\//i, "").toLowerCase();
         (linksByDoi[doi] || []).forEach(function (link) {
           var badge = document.createElement("span");
@@ -61,6 +64,18 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
       });
+
+      citationCounts.sort(function (a, b) { return b - a; });
+      var totalCitations = citationCounts.reduce(function (sum, count) {
+        return sum + count;
+      }, 0);
+      var hIndex = citationCounts.reduce(function (value, count, index) {
+        return count >= index + 1 ? index + 1 : value;
+      }, 0);
+      var totalElement = document.getElementById("total-citations");
+      var hIndexElement = document.getElementById("h-index");
+      if (totalElement) totalElement.textContent = totalCitations.toLocaleString();
+      if (hIndexElement) hIndexElement.textContent = hIndex;
     })
     .catch(function () {
       // Keep the publication list usable if the external citation service is unavailable.
