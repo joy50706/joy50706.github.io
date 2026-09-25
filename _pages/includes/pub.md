@@ -35,7 +35,7 @@
 ## Manuscripts Under Review
 
 - <span class="pub-venue pub-status"><em>Nat. Biomed. Eng.</em> · Invited News &amp; Views (under review)</span> **Integrative machine learning discovers effective peptides for siRNA delivery**. <span class="pub-authors"><em><strong><u>J. Xu</u></strong>, Z. Sun, F. Li and J. Song</em></span>.
-- <span class="pub-venue pub-status">Under review</span> **Decoding Functional LIR-Mediated Interfaces in Selective Autophagy through Computational Discovery**. <span class="pub-authors"><em><strong><u>J. Xu</u></strong>, Y. Hao and F. Li</em></span>.
+- <span class="pub-venue pub-status"><em>Med. Res. Rev.</em> · Under review</span> **Decoding Functional LIR-Mediated Interfaces in Selective Autophagy through Computational Discovery**. <span class="pub-authors"><em><strong><u>J. Xu</u></strong>, Y. Hao and F. Li</em></span>.
 - <span class="pub-venue pub-status"><em>BMC Med.</em> · Invited Review (under review)</span> **Artificial intelligence for antimicrobial peptide design and translation**. <span class="pub-authors"><em><strong><u>J. Xu</u></strong>, F. Li, J. Song and C. de la Fuente-Nunez</em></span>.
 
 ## Manuscripts in Preparation
