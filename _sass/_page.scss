@@ -73,6 +73,11 @@
   /* paragraph indents */
   p {
     margin: 0 0 $indent-var;
+    text-align: justify;
+    text-align-last: left;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    overflow-wrap: break-word;
 
     /* sibling indentation*/
     @if $paragraph-indent == true {
