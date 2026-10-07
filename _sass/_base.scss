@@ -13,7 +13,7 @@ body {
   padding-bottom: 0em;
   color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.5;
+  line-height: 1.45;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -22,7 +22,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 1em 0 0.5em;
+  margin: 0.8em 0 0.35em;
   line-height: 1.2;
   font-family: $header-font-family;
   font-weight: bold;
@@ -59,7 +59,7 @@ small, .small {
 }
 
 p {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.35em;
 }
 
 u,
@@ -73,7 +73,7 @@ ins {
 
 ul {
   padding-inline-start: 2em;
-  margin-block-start: 0.5em;
+  margin-block-start: 0.35em;
 }
 
 del a {
@@ -171,12 +171,12 @@ hr {
 
 ul li,
 ol li {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
 }
 
 li ul,
 li ol {
-  margin-top: 0.5em;
+  margin-top: 0.3em;
 }
 
 /*
