@@ -10,6 +10,7 @@
 \usepackage{titlesec}
 \usepackage{xcolor}
 \usepackage{fancyhdr}
+\usepackage{tabularx}
 
 \definecolor{headerblue}{RGB}{0,51,102}
 
@@ -48,6 +49,13 @@
   \textsuperscript{\ensuremath{\dagger}}%
 }
 
+\newcommand{\projectentry}[2]{%
+  \par\addvspace{2pt}%
+  \noindent\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X r@{}}
+    \textbf{#1} & \textbf{#2}
+  \end{tabularx}\par\vspace{-3pt}%
+}
+
 \begin{document}
 
 % Compact Header
@@ -84,6 +92,34 @@ Jing Xu's research lies at the intersection of artificial intelligence, bioinfor
 \vspace{-2pt}{\small\textit{Advisors:} Dr.~Fuyi Li, Prof.~Christopher Sweeney}\par
 \cventry{Research Assistant}{2025/2--2025/4}{Biomedicine Discovery Institute (BDI), Monash University}{}
 \vspace{-2pt}{\small\textit{Advisor:} Dr.~Chen Li}\par
+
+\section{Ongoing Research Projects}
+
+\projectentry{AI-Driven Antimicrobial and Anticancer Peptide Discovery and Design}{2025/10--Present}
+\begin{itemize}
+  \item Develop generative and sequence-optimisation approaches for antimicrobial and anticancer peptide discovery.
+  \item Apply computational screening and candidate prioritisation to support peptide synthesis and experimental validation.
+\end{itemize}
+
+\projectentry{Microbiome Genome Sequencing and Bioactive Peptide Mining}{2025/10--Present}
+\begin{itemize}
+  \item Process microbiome sequencing data through quality control, read preprocessing, and de novo genome assembly.
+  \item Perform genome reconstruction, gene prediction, and functional annotation.
+  \item Mine assembled genomes and metagenomic sequences for bioactive peptides and prioritise therapeutic candidates using machine-learning models.
+\end{itemize}
+
+\projectentry{Clinical Machine Learning in Prostate Cancer}{2025/04--Present}
+\begin{itemize}
+  \item Analyse clinical and molecular data from the ENZAMET trial using statistical, survival-analysis, and machine-learning methods.
+  \item Investigate factors associated with planned early docetaxel use and clinical outcomes in metastatic hormone-sensitive prostate cancer.
+\end{itemize}
+
+\projectentry{Multi-Omics Integration and Treatment-Response Modelling in Acral Melanoma}{2023/06--Present}
+\begin{itemize}
+  \item Integrate proteomic, phosphoproteomic, transcriptomic, and genomic data to characterise acral melanoma.
+  \item Identify molecular differences associated with melanoma subtype and response to anti-PD-1 therapy.
+  \item Develop machine-learning models using integrated multi-omics features to predict treatment response.
+\end{itemize}
 
 \section{Publications}
 {\small\equalcontrib\,Equal contribution / co-first author.}\par
