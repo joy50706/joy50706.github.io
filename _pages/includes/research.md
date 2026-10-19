@@ -1,6 +1,6 @@
 # 🔬 Ongoing Research
 
-- **Bioactive Peptide Discovery and Design** · **2025/10–Present**<br>
+- **AI-Driven Bioactive Peptide Discovery and Design** · **2025/10–Present**<br>
   *Generative modelling, peptide sequence optimisation, computational screening and experimental candidate prioritisation.*
 
 - **Microbiome Genome Sequencing and Bioactive Peptide Mining** · **2025/10–Present**  
