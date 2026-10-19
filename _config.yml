@@ -90,6 +90,9 @@ exclude:
   - vendor
   - google_scholar_crawler
   - github_myprofile_updater
+  - CV_JX.tex
+  - CV_JX_referees.tex
+  - CV_JX_referees.pdf
 keep_files:
   - .git
   - .svn

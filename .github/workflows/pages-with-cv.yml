@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: pages
@@ -22,11 +22,29 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends latexmk texlive-latex-extra texlive-fonts-recommended lmodern
-      - name: Compile CV
+      - name: Compile CV variants
         run: |
-          mkdir -p "$RUNNER_TEMP/cv"
-          latexmk -pdf -interaction=nonstopmode -halt-on-error -file-line-error -outdir="$RUNNER_TEMP/cv" CV_JX.tex
-          cp "$RUNNER_TEMP/cv/CV_JX.pdf" CV_JX.pdf
+          mkdir -p "$RUNNER_TEMP/cv-public" "$RUNNER_TEMP/cv-referees"
+          latexmk -pdf -interaction=nonstopmode -halt-on-error -file-line-error -outdir="$RUNNER_TEMP/cv-public" CV_JX.tex
+          latexmk -pdf -interaction=nonstopmode -halt-on-error -file-line-error -outdir="$RUNNER_TEMP/cv-referees" CV_JX_referees.tex
+          cp "$RUNNER_TEMP/cv-public/CV_JX.pdf" CV_JX.pdf
+          cp "$RUNNER_TEMP/cv-referees/CV_JX_referees.pdf" CV_JX_referees.pdf
+      - name: Store CV with referees
+        uses: actions/upload-artifact@v4
+        with:
+          name: CV_JX_with_referees
+          path: CV_JX_referees.pdf
+          if-no-files-found: error
+      - name: Synchronise compiled CV files
+        if: github.actor != 'github-actions[bot]'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add CV_JX.pdf CV_JX_referees.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m "Synchronise compiled CV variants [skip ci]"
+            git push
+          fi
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Build Jekyll website
@@ -35,7 +53,9 @@ jobs:
           source: ./
           destination: ./_site
       - name: Verify published PDF
-        run: cmp CV_JX.pdf _site/CV_JX.pdf
+        run: |
+          cmp CV_JX.pdf _site/CV_JX.pdf
+          test ! -e _site/CV_JX_referees.pdf
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
