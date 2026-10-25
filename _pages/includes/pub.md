@@ -40,5 +40,5 @@
 
 ## Manuscripts in Preparation
 
-- <span class="pub-venue pub-status"><em>Annu. Rev. Pharmacol. Toxicol.</em> · Invited Review (in preparation)</span> **AI-Aided Antibiotic Discovery**.
+- <span class="pub-venue pub-status">Manuscript in preparation</span> **AI-Aided Antibiotic Discovery**.
 - <span class="pub-venue pub-status">Manuscript in preparation</span> **Clinical and Molecular Features Associated with Planned Early Docetaxel Use in Metastatic Hormone-Sensitive Prostate Cancer: A Machine-Learning Analysis of the ENZAMET Trial**. <span class="pub-authors"><em><strong><u>J. Xu</u></strong>, S. Kaur, M. Guilhaus, L. Nguyen, F. Li and C. Sweeney.</em></span>
