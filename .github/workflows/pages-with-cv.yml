@@ -10,7 +10,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -18,11 +18,23 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Check whether CV sources changed
+        id: cv
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || ! git diff --quiet HEAD^ HEAD -- CV_JX.tex CV_JX_referees.tex; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
       - name: Install LaTeX
+        if: steps.cv.outputs.changed == 'true'
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends latexmk texlive-latex-extra texlive-fonts-recommended lmodern
       - name: Compile CV variants
+        if: steps.cv.outputs.changed == 'true'
         run: |
           mkdir -p "$RUNNER_TEMP/cv-public" "$RUNNER_TEMP/cv-referees"
           latexmk -pdf -interaction=nonstopmode -halt-on-error -file-line-error -outdir="$RUNNER_TEMP/cv-public" CV_JX.tex
@@ -30,13 +42,14 @@ jobs:
           cp "$RUNNER_TEMP/cv-public/CV_JX.pdf" CV_JX.pdf
           cp "$RUNNER_TEMP/cv-referees/CV_JX_referees.pdf" CV_JX_referees.pdf
       - name: Store CV with referees
+        if: steps.cv.outputs.changed == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: CV_JX_with_referees
           path: CV_JX_referees.pdf
           if-no-files-found: error
       - name: Synchronise compiled CV files
-        if: github.actor != 'github-actions[bot]'
+        if: steps.cv.outputs.changed == 'true' && github.actor != 'github-actions[bot]'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
