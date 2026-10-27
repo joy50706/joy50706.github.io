@@ -1,0 +1,123 @@
+{
+  "source": "Google Scholar",
+  "profile_url": "https://scholar.google.com.au/citations?hl=en&user=oEvieAoAAAAJ&pagesize=100",
+  "updated_at": "2026-10-27T00:46:18.211000+00:00",
+  "metrics": {
+    "citations": {
+      "all": 843,
+      "since_2021": 833
+    },
+    "h_index": {
+      "all": 12,
+      "since_2021": 12
+    },
+    "i10_index": {
+      "all": 13,
+      "since_2021": 12
+    }
+  },
+  "publications": [
+    {
+      "title": "Comprehensive assessment of machine learning-based methods for predicting antimicrobial peptides",
+      "citations": 198,
+      "year": 2021,
+      "author_publication_id": "oEvieAoAAAAJ:p__nRnzSRKYC"
+    },
+    {
+      "title": "iAMPCN: a deep-learning approach for identifying antimicrobial peptides and their functional activities",
+      "citations": 147,
+      "year": 2023,
+      "author_publication_id": "oEvieAoAAAAJ:i_7YvbSbtFEC"
+    },
+    {
+      "title": "Positive-unlabeled learning in bioinformatics and computational biology: a brief review",
+      "citations": 111,
+      "year": 2022,
+      "author_publication_id": "oEvieAoAAAAJ:L7CI7m0gUJcC"
+    },
+    {
+      "title": "Antimicrobial peptide identification using multi-scale convolutional network",
+      "citations": 109,
+      "year": 2019,
+      "author_publication_id": "oEvieAoAAAAJ:ML0RJ9NH7IQC"
+    },
+    {
+      "title": "eCAMI: simultaneous classification and motif identification for enzyme annotation",
+      "citations": 58,
+      "year": 2020,
+      "author_publication_id": "oEvieAoAAAAJ:u-x6o8ySG0sC"
+    },
+    {
+      "title": "Knowledge gaps in immune response and immunotherapy involving nanomaterials: Databases and artificial intelligence for material design",
+      "citations": 56,
+      "year": 2021,
+      "author_publication_id": "oEvieAoAAAAJ:Z5m8FVwuT1cC"
+    },
+    {
+      "title": "Predicting nanotoxicity by an integrated machine learning and metabolomics approach",
+      "citations": 50,
+      "year": 2020,
+      "author_publication_id": "oEvieAoAAAAJ:URolC5Kub84C"
+    },
+    {
+      "title": "ASPIRER: a new computational approach for identifying non-classical secreted proteins based on deep learning",
+      "citations": 32,
+      "year": 2022,
+      "author_publication_id": "oEvieAoAAAAJ:rCNdntzdTkkC"
+    },
+    {
+      "title": "Multimodal geometric learning for antimicrobial peptide identification by leveraging alphafold2-predicted structures and surface features",
+      "citations": 21,
+      "year": 2025,
+      "author_publication_id": "oEvieAoAAAAJ:lK9BDNCuzFgC"
+    },
+    {
+      "title": "Copra: Bridging cross-domain pretrained sequence models with complex structures for protein-rna binding affinity prediction",
+      "citations": 14,
+      "year": 2025,
+      "author_publication_id": "oEvieAoAAAAJ:oursBaop5wYC"
+    },
+    {
+      "title": "Ensemble learning model identifies adaptation classification and turning points of river microbial communities in response to heatwaves",
+      "citations": 13,
+      "year": 2023,
+      "author_publication_id": "oEvieAoAAAAJ:0ngZmJvimKcC"
+    },
+    {
+      "title": "Multi-modality data-driven analysis of diagnosis and treatment of psoriatic arthritis",
+      "citations": 13,
+      "year": 2023,
+      "author_publication_id": "oEvieAoAAAAJ:MDX3w3dAD3YC"
+    },
+    {
+      "title": "Ensemble consensus-guided unsupervised feature selection to identify Huntington’s disease-associated genes",
+      "citations": 10,
+      "year": 2018,
+      "author_publication_id": "oEvieAoAAAAJ:d1gkVwhDpl0C"
+    },
+    {
+      "title": "Artificial intelligence in antibiotic discovery: Applications, challenges, and future outlook",
+      "citations": 6,
+      "year": 2026,
+      "author_publication_id": "oEvieAoAAAAJ:yIeBiWEAh44C"
+    },
+    {
+      "title": "Bayesian Multi-scale Convolutional Neural Network for Motif Occupancy Identification",
+      "citations": 2,
+      "year": 2020,
+      "author_publication_id": "oEvieAoAAAAJ:4MWp96NkSFoC"
+    },
+    {
+      "title": "K-means Based Unsupervised Feature Selection to Prioritize Biomarkers of Different Disease Clinical Phases",
+      "citations": 2,
+      "year": 2020,
+      "author_publication_id": "oEvieAoAAAAJ:yB1At4FlUx8C"
+    },
+    {
+      "title": "Generalizable mutation-effect prediction across adaptive immune recognition via unified multimodal framework",
+      "citations": 1,
+      "year": 2026,
+      "author_publication_id": "oEvieAoAAAAJ:oqD4_j7ulsYC"
+    }
+  ]
+}

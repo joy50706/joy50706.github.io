@@ -1,83 +1,65 @@
 document.addEventListener("DOMContentLoaded", function () {
   var titleLinks = Array.prototype.slice.call(
-    document.querySelectorAll('.pub-venue + strong a[href*="doi.org/"], .pub-venue + strong a[href*="/doi/"]')
+    document.querySelectorAll(".pub-venue + strong a")
   );
 
-  if (!titleLinks.length) return;
-
-  function extractDoi(href) {
-    var decoded = decodeURIComponent(href);
-    var lower = decoded.toLowerCase();
-    var marker = lower.indexOf("doi.org/");
-    var offset = 8;
-    if (marker === -1) {
-      marker = lower.indexOf("/doi/");
-      offset = 5;
-    }
-    if (marker === -1) return null;
-    return decoded.slice(marker + offset).split(/[?#]/)[0].toLowerCase();
+  function normalizeTitle(value) {
+    return value
+      .normalize("NFKD")
+      .toLowerCase()
+      .replace(/[\u2010-\u2015]/g, "-")
+      .replace(/[^a-z0-9]+/g, " ")
+      .trim();
   }
 
-  var linksByDoi = {};
-  titleLinks.forEach(function (link) {
-    var doi = extractDoi(link.href);
-    if (!doi) return;
-    linksByDoi[doi] = linksByDoi[doi] || [];
-    linksByDoi[doi].push(link);
-  });
+  function relaxedTitle(value) {
+    return normalizeTitle(value)
+      .replace(/\b(a|an|the)\b/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
 
-  var dois = Object.keys(linksByDoi);
-  if (!dois.length) return;
-
-  var params = new URLSearchParams({
-    filter: "doi:" + dois.map(function (doi) {
-      return "https://doi.org/" + doi;
-    }).join("|"),
-    "per-page": "50",
-    select: "doi,cited_by_count"
-  });
-
-  fetch("https://api.openalex.org/works?" + params.toString())
+  fetch("/assets/data/google-scholar.json?ts=" + Date.now(), { cache: "no-store" })
     .then(function (response) {
-      if (!response.ok) throw new Error("Citation lookup failed");
+      if (!response.ok) throw new Error("Google Scholar snapshot lookup failed");
       return response.json();
     })
     .then(function (data) {
-      var citationCounts = [];
-
-      data.results.forEach(function (work) {
-        if (!work.doi) return;
-        citationCounts.push(work.cited_by_count || 0);
-        var doi = work.doi.replace(/^https:\/\/doi\.org\//i, "").toLowerCase();
-        (linksByDoi[doi] || []).forEach(function (link) {
-          var badge = document.createElement("span");
-          badge.className = "citation-badge";
-          badge.title = "Citation count from OpenAlex";
-          badge.innerHTML =
-            '<span class="citation-badge__label"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Citations</span>' +
-            '<span class="citation-badge__count">' + work.cited_by_count + "</span>";
-          var authorBlock = link.parentElement.parentElement.querySelector(".pub-authors");
-          if (authorBlock) {
-            authorBlock.insertAdjacentElement("beforebegin", badge);
-          } else {
-            link.parentElement.insertAdjacentElement("afterend", badge);
-          }
-        });
+      var publications = {};
+      (data.publications || []).forEach(function (publication) {
+        publications[normalizeTitle(publication.title)] = publication;
+        publications[relaxedTitle(publication.title)] = publication;
       });
 
-      citationCounts.sort(function (a, b) { return b - a; });
-      var totalCitations = citationCounts.reduce(function (sum, count) {
-        return sum + count;
-      }, 0);
-      var hIndex = citationCounts.reduce(function (value, count, index) {
-        return count >= index + 1 ? index + 1 : value;
-      }, 0);
+      titleLinks.forEach(function (link) {
+        var publication = publications[normalizeTitle(link.textContent)] ||
+          publications[relaxedTitle(link.textContent)];
+        if (!publication) return;
+
+        var badge = document.createElement("span");
+        badge.className = "citation-badge";
+        badge.title = "Citation count from Google Scholar";
+        badge.innerHTML =
+          '<span class="citation-badge__label"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Citations</span>' +
+          '<span class="citation-badge__count">' + publication.citations + "</span>";
+        var authorBlock = link.parentElement.parentElement.querySelector(".pub-authors");
+        if (authorBlock) {
+          authorBlock.insertAdjacentElement("beforebegin", badge);
+        } else {
+          link.parentElement.insertAdjacentElement("afterend", badge);
+        }
+      });
+
       var totalElement = document.getElementById("total-citations");
       var hIndexElement = document.getElementById("h-index");
-      if (totalElement) totalElement.textContent = totalCitations.toLocaleString();
-      if (hIndexElement) hIndexElement.textContent = hIndex;
+      if (totalElement && data.metrics && data.metrics.citations) {
+        totalElement.textContent = data.metrics.citations.all.toLocaleString();
+      }
+      if (hIndexElement && data.metrics && data.metrics.h_index) {
+        hIndexElement.textContent = data.metrics.h_index.all;
+      }
     })
     .catch(function () {
-      // Keep the publication list usable if the external citation service is unavailable.
+      // Keep the publication list usable if the snapshot is unavailable.
     });
 });

@@ -4,7 +4,7 @@ My research lies at the intersection of **artificial intelligence, bioinformatic
 
 **Research interests:** Bioactive Peptide Discovery · Human Microbiome · Multi-Omics Data Analysis · Bioinformatics · Computational Biology · Deep Learning.
 
-<div class="academic-metrics" id="academic-metrics" title="Calculated from the publications listed on this page; data from OpenAlex">
+<div class="academic-metrics" id="academic-metrics" title="Citation metrics from Google Scholar">
   <span class="academic-metric">
     <span class="academic-metric__label"><i class="fas fa-quote-right" aria-hidden="true"></i> Total Citations</span>
     <span class="academic-metric__value" id="total-citations">—</span>
@@ -13,5 +13,5 @@ My research lies at the intersection of **artificial intelligence, bioinformatic
     <span class="academic-metric__label"><i class="fas fa-chart-line" aria-hidden="true"></i> H-index</span>
     <span class="academic-metric__value" id="h-index">—</span>
   </span>
-  <span class="academic-metrics__source">OpenAlex</span>
+  <span class="academic-metrics__source">Google Scholar</span>
 </div>
