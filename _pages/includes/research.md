@@ -1,7 +1,7 @@
 # 🔬 Ongoing Research
 
 - **Peptide–Protein Interaction Prediction** · **2026/10–Present**<br>
-  *Developing computational approaches to predict interactions between peptides and proteins. Benchmarking predictive performance against state-of-the-art methods across relevant datasets.*
+  *Developing computational approaches to predict interactions between peptides and proteins.*
 
 - **AI-Driven Bioactive Peptide Discovery and Design** · **2025/10–Present**<br>
   *Generative modelling, peptide sequence optimisation, computational screening and experimental candidate prioritisation.*
