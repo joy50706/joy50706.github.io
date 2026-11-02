@@ -7,6 +7,8 @@ import json
 import os
 from pathlib import Path
 import re
+import sys
+from urllib.error import HTTPError
 from urllib.parse import parse_qs, urlparse
 from urllib.request import Request, urlopen
 
@@ -32,8 +34,40 @@ request = Request(
         )
     },
 )
-with urlopen(request, timeout=30) as response:
-    page = response.read().decode("utf-8")
+try:
+    with urlopen(request, timeout=30) as response:
+        page = response.read().decode("utf-8")
+except HTTPError as error:
+    # Only scheduled runs may retain a previously validated snapshot.
+    # Manual/local runs and unexpected errors must still fail visibly.
+    if (
+        error.code not in (403, 429)
+        or os.environ.get("GITHUB_EVENT_NAME") != "schedule"
+        or not OUTPUT_PATH.exists()
+    ):
+        raise
+    previous = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
+    if (
+        previous.get("profile_url") != PROFILE_URL
+        or not previous.get("updated_at")
+        or not previous.get("publications")
+        or not all(
+            isinstance(previous.get("metrics", {}).get(key, {}).get("all"), int)
+            for key in ("citations", "h_index", "i10_index")
+        )
+    ):
+        raise RuntimeError("No valid existing Scholar snapshot to retain") from error
+    message = (
+        f"Google Scholar returned HTTP {error.code}; update skipped. "
+        f"Keeping the snapshot from {previous['updated_at']} unchanged. "
+        "Citation data has NOT been refreshed."
+    )
+    print(f"::warning::{message}")
+    summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary_path:
+        with open(summary_path, "a", encoding="utf-8") as summary:
+            summary.write(f"### Google Scholar update skipped\n\n{message}\n")
+    sys.exit(0)
 
 metrics_table = re.search(
     r'<table id="gsc_rsb_st".*?</table>', page, flags=re.DOTALL
