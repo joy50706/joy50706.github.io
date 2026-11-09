@@ -1,11 +1,11 @@
 {
   "source": "Google Scholar",
   "profile_url": "https://scholar.google.com.au/citations?hl=en&user=oEvieAoAAAAJ&pagesize=100",
-  "updated_at": "2026-11-02T06:11:11.447214+00:00",
+  "updated_at": "2026-11-09T06:55:00.782519+00:00",
   "metrics": {
     "citations": {
-      "all": 854,
-      "since_2021": 844
+      "all": 861,
+      "since_2021": 851
     },
     "h_index": {
       "all": 12,
@@ -19,7 +19,7 @@
   "publications": [
     {
       "title": "Comprehensive assessment of machine learning-based methods for predicting antimicrobial peptides",
-      "citations": 203,
+      "citations": 204,
       "year": 2021,
       "author_publication_id": "oEvieAoAAAAJ:p__nRnzSRKYC"
     },
@@ -31,7 +31,7 @@
     },
     {
       "title": "Positive-unlabeled learning in bioinformatics and computational biology: a brief review",
-      "citations": 112,
+      "citations": 113,
       "year": 2022,
       "author_publication_id": "oEvieAoAAAAJ:L7CI7m0gUJcC"
     },
@@ -55,7 +55,7 @@
     },
     {
       "title": "Predicting nanotoxicity by an integrated machine learning and metabolomics approach",
-      "citations": 50,
+      "citations": 51,
       "year": 2020,
       "author_publication_id": "oEvieAoAAAAJ:URolC5Kub84C"
     },
@@ -78,16 +78,16 @@
       "author_publication_id": "oEvieAoAAAAJ:oursBaop5wYC"
     },
     {
+      "title": "Multi-modality data-driven analysis of diagnosis and treatment of psoriatic arthritis",
+      "citations": 14,
+      "year": 2023,
+      "author_publication_id": "oEvieAoAAAAJ:MDX3w3dAD3YC"
+    },
+    {
       "title": "Ensemble learning model identifies adaptation classification and turning points of river microbial communities in response to heatwaves",
       "citations": 13,
       "year": 2023,
       "author_publication_id": "oEvieAoAAAAJ:0ngZmJvimKcC"
-    },
-    {
-      "title": "Multi-modality data-driven analysis of diagnosis and treatment of psoriatic arthritis",
-      "citations": 13,
-      "year": 2023,
-      "author_publication_id": "oEvieAoAAAAJ:MDX3w3dAD3YC"
     },
     {
       "title": "Ensemble consensus-guided unsupervised feature selection to identify Huntington’s disease-associated genes",
@@ -97,7 +97,7 @@
     },
     {
       "title": "Artificial intelligence in antibiotic discovery: Applications, challenges, and future outlook",
-      "citations": 6,
+      "citations": 8,
       "year": 2026,
       "author_publication_id": "oEvieAoAAAAJ:yIeBiWEAh44C"
     },
@@ -118,6 +118,18 @@
       "citations": 1,
       "year": 2026,
       "author_publication_id": "oEvieAoAAAAJ:oqD4_j7ulsYC"
+    },
+    {
+      "title": "Modification-aware AI enables terminal chemical modifications for peptide design and discovers potent antimicrobials",
+      "citations": 1,
+      "year": 2026,
+      "author_publication_id": "oEvieAoAAAAJ:SrKkpNFED5gC"
+    },
+    {
+      "title": "TraSPIN: inferring transporter specificity through language model-guided graph learning",
+      "citations": 0,
+      "year": 2026,
+      "author_publication_id": "oEvieAoAAAAJ:bXQfdp6S9ecC"
     }
   ]
 }
