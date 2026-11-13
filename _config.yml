@@ -5,6 +5,10 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
+# Research visibility: true 显示蛋白—多肽相互作用项目；false 隐藏。
+# 修改后重新构建／部署网站；本地 jekyll serve 需要重启。
+show_peptide_protein_project: false
+
 # Site Settings
 title                    : "Jing Xu"
 description              : "AI for bioactive peptide discovery, bioinformatics and computational biology."

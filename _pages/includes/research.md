@@ -1,7 +1,9 @@
 # 🔬 Ongoing Research
 
+{% if site.show_peptide_protein_project == true %}
 - **Peptide–Protein Interaction Prediction** · **2026/10–Present**<br>
   *Developing computational approaches to predict interactions between peptides and proteins.*
+{% endif %}
 
 - **AI-Driven Bioactive Peptide Discovery and Design** · **2025/10–Present**<br>
   *Generative modelling, peptide sequence optimisation, computational screening and experimental candidate prioritisation.*
