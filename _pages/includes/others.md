@@ -9,9 +9,8 @@
 
 <span class="anchor" id="presentations"></span>
 # 💬 Conference Presentations
-- **2026/11/17:** Oral presentation (10 minutes), [ABACBS 2026](https://www.abacbs.org/2026), RMIT University, Melbourne.  
-  *“Modification-aware screening of AI-generated peptides identifies potent antimicrobials with defined terminal chemistry”*  
-  Microbes & Microbiome session · [Conference program](https://static1.squarespace.com/static/5423875be4b03f0c482a58c4/t/6af69776e983a8468f2a9776/1794545526296/ABACBS2026_Program_FINAL.pdf#page=2).
+- **2026/11/17:** Oral presentation (10 minutes), [ABACBS 2026](https://www.abacbs.org/2026), RMIT University, Melbourne · Microbes & Microbiome session.  
+  *“Modification-aware screening of AI-generated peptides identifies potent antimicrobials with defined terminal chemistry”*
 - **2026:** Oral presentation, Adelaide Protein Group (APG) Annual Research Symposium.  
   *“AI-driven peptide design and antimicrobials discovery”*
 - **2025:** Poster presentation, Lorne Proteins Conference.
