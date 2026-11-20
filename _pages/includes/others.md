@@ -9,7 +9,7 @@
 
 <span class="anchor" id="presentations"></span>
 # 💬 Conference Presentations
-- **2026:** Oral presentation, ABACBS 2026 · Microbes & Microbiome session.  
+- **2026:** Oral presentation, ABACBS 2026 · Microbes & Microbiome session, Melbourne.  
   *“Modification-aware screening of AI-generated peptides identifies potent antimicrobials with defined terminal chemistry”*
 - **2026:** Oral presentation, Adelaide Protein Group (APG) Annual Research Symposium.  
   *“AI-driven peptide design and antimicrobials discovery”*
