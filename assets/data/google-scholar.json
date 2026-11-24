@@ -1,11 +1,11 @@
 {
   "source": "Google Scholar",
   "profile_url": "https://scholar.google.com.au/citations?hl=en&user=oEvieAoAAAAJ&pagesize=100",
-  "updated_at": "2026-11-09T06:55:00.782519+00:00",
+  "updated_at": "2026-11-24T04:46:36.848900+00:00",
   "metrics": {
     "citations": {
-      "all": 861,
-      "since_2021": 851
+      "all": 866,
+      "since_2021": 856
     },
     "h_index": {
       "all": 12,
@@ -19,19 +19,19 @@
   "publications": [
     {
       "title": "Comprehensive assessment of machine learning-based methods for predicting antimicrobial peptides",
-      "citations": 204,
+      "citations": 205,
       "year": 2021,
       "author_publication_id": "oEvieAoAAAAJ:p__nRnzSRKYC"
     },
     {
       "title": "iAMPCN: a deep-learning approach for identifying antimicrobial peptides and their functional activities",
-      "citations": 149,
+      "citations": 151,
       "year": 2023,
       "author_publication_id": "oEvieAoAAAAJ:i_7YvbSbtFEC"
     },
     {
       "title": "Positive-unlabeled learning in bioinformatics and computational biology: a brief review",
-      "citations": 113,
+      "citations": 114,
       "year": 2022,
       "author_publication_id": "oEvieAoAAAAJ:L7CI7m0gUJcC"
     },
@@ -49,7 +49,7 @@
     },
     {
       "title": "Knowledge gaps in immune response and immunotherapy involving nanomaterials: Databases and artificial intelligence for material design",
-      "citations": 56,
+      "citations": 57,
       "year": 2021,
       "author_publication_id": "oEvieAoAAAAJ:Z5m8FVwuT1cC"
     },
@@ -61,7 +61,7 @@
     },
     {
       "title": "ASPIRER: a new computational approach for identifying non-classical secreted proteins based on deep learning",
-      "citations": 32,
+      "citations": 31,
       "year": 2022,
       "author_publication_id": "oEvieAoAAAAJ:rCNdntzdTkkC"
     },
@@ -73,7 +73,7 @@
     },
     {
       "title": "Copra: Bridging cross-domain pretrained sequence models with complex structures for protein-rna binding affinity prediction",
-      "citations": 14,
+      "citations": 15,
       "year": 2025,
       "author_publication_id": "oEvieAoAAAAJ:oursBaop5wYC"
     },
