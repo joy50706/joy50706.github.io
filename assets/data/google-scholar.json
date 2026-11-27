@@ -1,11 +1,11 @@
 {
   "source": "Google Scholar",
   "profile_url": "https://scholar.google.com.au/citations?hl=en&user=oEvieAoAAAAJ&pagesize=100",
-  "updated_at": "2026-11-24T04:46:36.848900+00:00",
+  "updated_at": "2026-11-27T01:35:55.210642+00:00",
   "metrics": {
     "citations": {
-      "all": 866,
-      "since_2021": 856
+      "all": 870,
+      "since_2021": 860
     },
     "h_index": {
       "all": 12,
@@ -19,7 +19,7 @@
   "publications": [
     {
       "title": "Comprehensive assessment of machine learning-based methods for predicting antimicrobial peptides",
-      "citations": 205,
+      "citations": 206,
       "year": 2021,
       "author_publication_id": "oEvieAoAAAAJ:p__nRnzSRKYC"
     },
@@ -31,7 +31,7 @@
     },
     {
       "title": "Positive-unlabeled learning in bioinformatics and computational biology: a brief review",
-      "citations": 114,
+      "citations": 116,
       "year": 2022,
       "author_publication_id": "oEvieAoAAAAJ:L7CI7m0gUJcC"
     },
@@ -55,7 +55,7 @@
     },
     {
       "title": "Predicting nanotoxicity by an integrated machine learning and metabolomics approach",
-      "citations": 51,
+      "citations": 52,
       "year": 2020,
       "author_publication_id": "oEvieAoAAAAJ:URolC5Kub84C"
     },
